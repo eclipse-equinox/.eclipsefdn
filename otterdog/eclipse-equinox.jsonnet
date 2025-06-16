@@ -27,7 +27,7 @@ orgs.newOrg('eclipse.equinox', 'eclipse-equinox') {
   ],
   _repositories+:: [
     orgs.newRepo('.github') {
-      allow_merge_commit: true,
+      allow_squash_merge: false,
       delete_branch_on_merge: true,
       web_commit_signoff_required: false,
       workflows+: {
